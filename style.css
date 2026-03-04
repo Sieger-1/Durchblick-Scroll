@@ -1,0 +1,84 @@
+body{
+    background-color: lightblue;
+
+}
+
+html{
+    scroll-behavior: initial;
+    overflow: hidden;
+}
+
+
+.scroll-bereich{
+    height: 800vh;
+    position: relative;
+}
+
+
+.bild-container {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.bild{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+
+}
+
+.h1{
+    font-family: monospace;
+}
+
+.bild-2{
+    opacity: 1;
+    filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.9));
+}
+
+.popup{
+    position: absolute;
+    padding: 8px 15px;
+    background-color: rgb(255, 255, 255);
+    color: #345;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-family: monospace;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5); 
+    transform-origin: center center;
+    transform: scale(0.5);
+    transition: transform 0.3s ease;
+    z-index: 20;
+}
+
+@media (max-width: 768px) {
+    .popup{
+        top: auto !important;
+        left: 50% !important;
+        bottom: 30px;
+        white-space: nowrap;
+        width: auto;
+        transform: translate(-50%, 0) scale(0.5);
+        font-size: 1rem;
+        text-align: center;
+        
+    }
+}
+.weiterscrollen{
+    opacity: 1;
+    font-size: 3rem;
+    white-space: nowrap
+    
+}
+
+
